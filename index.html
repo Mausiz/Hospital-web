@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimosa Cottage Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-upper">
+            <img src="./images/2024-04-10.png" alt="Mimosa Cottage Hospital" class="logo">
+            <div class="location"> 0: +254712345678          Em: Mimosacottage@gmail.com</div>
+            <div class="location"> Marurui, Thome</div>
+        </div>
+        <!-------- Menu - Start -->
+        <nav class="navbar-lower">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu-items">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#departments">Departments</a>
+                <a href="#patients">Patients</a>
+                <a href="/form.html">Appointments</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-------- Menu - End-->
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button onclick="searchFunction()">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <!--------------Slider section - Start ------------>
+    <section id="slider">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+            <button class="arrow left-arrow">&larr;</button>
+            <button class="arrow right-arrow">&rarr;</button>
+        </div>
+    </section>
+
+    <!--------------Slider section - End -------------->
+
+    <!--------------Location/ Appointment Buttons - Start------>
+    <section id="links" class="links-section">
+        <div class="links-container">
+            <button class="glovo-btn" id="external-link-btn">Glovo</button>
+            <button class="map-btn" id="show-map-btn">Location</button>
+        </div>
+
+        <div id="map-overlay">
+            <div class="close-btn" id="close-map-btn">Cancel</div>
+            <div id="map"></div>
+        </div>
+    </section>
+    <!-----------Location/ Appointment Buttons - End ------>
+
+    <!-------------- About section - Start ------>
+    <section class="about-us">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-us-container">
+            <div class="about-us-content">
+                <h3 class="content-title">Our Mission</h3>
+                <p class="content-text">
+                    We are dedicated to providing exceptional healthcare services with compassion and expertise. Our team of professionals is committed to improving the health and well-being of our community through innovative treatments and personalized care.
+                </p>
+                <button class="cta-button">Learn More</button>
+
+            </div>
+            <div class="image-gallery">
+                <div class="collage">
+                <img src="/images/2023-10-29.png" alt="Hospital Image 1" class="gallery-image image1">
+                <img src="/images/2024-04-10.png" alt="Hospital Image 2" class="gallery-image image2">
+                <img src="/images/2024-06-07.png" alt="Hospital Image 3" class="gallery-image image3">
+                <img src="/images/2024-04-10.png" alt="Hospital Image 4" class="gallery-image image4">
+                <img src="/images/2023-10-29.png" alt="Hospital Image 5" class="gallery-image image5">
+                </div>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="/images/nhif.png" alt="Logo 1">
+                <img src="/images/Britam.png" alt="Logo 2">
+                <img src="/images/mtiba.png" alt="Logo 3">
+                <img src="/images/nhif.png" alt="Logo 1">
+                <img src="/images/Britam.png" alt="Logo 2">
+                <img src="/images/mtiba.png" alt="Logo 3">
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card" tabindex="0">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Cardiology</h3>
+                <p>Expert care for heart health</p>
+                <div class="service-details">
+                    <ul>
+                        <li>- Diagnostic tests</li>
+                        <li>- Interventional procedures</li>
+                        <li>- Cardiac rehabilitation</li>
+                    </ul>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="service-card" tabindex="0">
+                <i class="fas fa-brain"></i>
+                <h3>Neurology</h3>
+                <p>Comprehensive brain and nerve care</p>
+                <div class="service-details">
+                    <ul>
+                        <li>Stroke treatment</li>
+                        <li>Epilepsy management</li>
+                        <li>Neurosurgery</li>
+                    </ul>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="service-card" tabindex="0">
+                <i class="fas fa-baby-carriage"></i>
+                <h3>Maternity Services</h3>
+                <p>Comprehensive care for expectant mothers</p>
+                <div class="service-details">
+                    <ul>
+                        <li>Prenatal care</li>
+                        <li>Delivery services</li>
+                        <li>Postnatal support</li>
+                    </ul>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="service-card" tabindex="0">
+                <i class="fas fa-child-reaching"></i>
+                <h3>Child-Mother Care</h3>
+                <p>Specialized care for mothers and children</p>
+                <div class="service-details">
+                    <ul>
+                        <li>Pediatric services</li>
+                        <li>Lactation support</li>
+                        <li>Child development monitoring</li>
+                    </ul>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="service-card" tabindex="0">
+                <i class="fas fa-truck-medical"></i>
+                <h3>Ambulance Services</h3>
+                <p>24/7 emergency medical transportation</p>
+                <div class="service-details">
+                    <ul>
+                        <li>Rapid response</li>
+                        <li>Advanced life support</li>
+                        <li>Inter-hospital transfers</li>
+                    </ul>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="service-card" tabindex="0">
+                <i class="fas fa-flask-vial"></i>
+                <h3>Laboratory Services</h3>
+                <p>State-of-the-art diagnostic testing</p>
+                <div class="service-details">
+                    <ul>
+                        <li>Blood tests</li>
+                        <li>Pathology</li>
+                        <li>Microbiology</li>
+                    </ul>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="service-card" tabindex="0">
+                <i class="fas fa-people-roof"></i>
+                <h3>Family Planning</h3>
+                <p>Comprehensive reproductive health services</p>
+                <div class="service-details">
+                    <ul>
+                        <li>Contraception counseling</li>
+                        <li>Fertility services</li>
+                        <li>Reproductive health education</li>
+                    </ul>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="service-card" tabindex="0">
+                <i class="fas fa-prescription-bottle-medical"></i>
+                <h3>Pharmacy</h3>
+                <p>Full-service pharmacy for all your medication needs</p>
+                <div class="service-details">
+                    <ul>
+                        <li>Prescription filling</li>
+                        <li>Medication counseling</li>
+                        <li>Over-the-counter products</li>
+                    </ul>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-------------- Appointment section - Start ------>
+        <!-------------- Appointment section - End ------>
+
+    <!-------------- About section - End ------>
+    <footer class="hospital-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="/images/MimosaLogo.webp" alt="Hospital Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-sections-wrapper">
+                <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Find a Doctor</a></li>
+                    <li><a href="#">Patient Portal</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-section">
+                <h3>Patient Resources</h3>
+                <ul>
+                    <li><a href="#">Appointment Scheduling</a></li>
+                    <li><a href="#">Bill Pay</a></li>
+                    <li><a href="#">Medical Records</a></li>
+                    <li><a href="#">Patient Rights</a></li>
+                    <li><a href="#">Visitor Information</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-section">
+                <h3>Departments</h3>
+                <ul>
+                    <li><a href="#">Cardiology</a></li>
+                    <li><a href="#">Neurology</a></li>
+                    <li><a href="#">Maternity Services</a></li>
+                    <li><a href="#">Laboratory Services</a></li>
+                    <li><a href="#">Emergency Care</a></li>
+                </ul>
+                </div>
+
+                <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Hospital Street, City, State 12345</p>
+                <p><i class="fas fa-phone"></i> Emergency: 911</p>
+                <p><i class="fas fa-phone"></i> General: (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@hospital.com</p>
+                </div>
+            </div>
+            </div>
+
+        <!-- Rest of the footer remains the same -->
+    </footer>
+
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+            <ul class="legal-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Back to top">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
