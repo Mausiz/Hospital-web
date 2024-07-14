@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
@@ -65,8 +66,8 @@ header {
 }
 
 .bar {
-    width: 30px;
-    height: 3px;
+    width: 2.2rem;
+    height: 0.17rem;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
@@ -158,10 +159,12 @@ header {
     width: 100vw;
     height: 60vh;
 }
+
 .slider-container {
     height: 100%;
     overflow: hidden;
     position: relative;
+    border-radius: 0 0 10px 10px;
     z-index: 1;
 }
 
@@ -169,6 +172,7 @@ header {
     display: flex;
     height: 100%;
     transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    overflow: hidden;
 }
 
 .slide {
@@ -179,12 +183,57 @@ header {
     align-items: center;
     font-size: 2rem;
     color: white;
+    background-size: cover;
+    background-position: center;
 }
 
-.slide:nth-child(1) { background-image: url('/images/2023-10-29.png'); }
-.slide:nth-child(2) { background-image: url('/images/2024-04-10.png'); }
-.slide:nth-child(3) { background-image: url('/images/2024-06-07.png'); }
-.slide:nth-child(4) { background-image: url('/images/2024-04-10.png');  }
+.slide:nth-child(1) {
+    background-image: url('/images/white-theatre.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(2) {
+    background-image: url('/images/theatre-nurse.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(3) {
+    background-image: url('/images/baby-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(4) {
+    background-image: url('/images/motherChild.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.text-overlay {
+    position: relative;
+    margin-left: 10px;
+    bottom: -11%;
+    left: -15%;
+    z-index: 2;
+    color: white;
+    background: rgba(0, 0, 0, 0.050); /* Semi-transparent background */
+    padding: 1.1rem 1.3rem;
+    border-radius: 5px;
+    width: 21rem; /* Optional: to control the width of the text box */
+}
+
+.title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.description {
+    margin: 5px 0 0;
+    font-size: 1.1rem;
+}
 
 .arrow {
     position: absolute;
@@ -232,28 +281,38 @@ header {
     gap: 20px;
 }
 
-.glovo-btn {
-    width: 20dvw;
-    height: 6dvh;
+.appointment-btn {
+    width: max-content;
+    max-width: 25dvw;
+    height: 3.5rem;
     border: none;
-    background-image: url('/images/2023-10-29.png');
+    border-radius: 10px 0 10px 0;
+    background-image: url('/images/white-theatre.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 5dvh;
+    color: rgb(66, 21, 66);
+    font-size: 1.3rem;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.appointment-btn a {
+    text-decoration: none;
+}
+
 .map-btn {
     width: 20dvw;
-    height: 6dvh;
+    height: 3.5rem;
     border: none;
-    background-image: url('/images/2024-04-10.png');
+    border-radius: 10px 0 10px 0;
+    background-image: url('/images/mapbg.jpg');
     background-size: cover;
     background-position: center; /* Center the background image */
-    color: white;
-    font-size: 1.2rem;
+    color: rgb(66, 21, 66);
+    font-size: 1.3rem;
     text-align: center;
     line-height: 5dvh; /* Align text vertically */
     cursor: pointer;
