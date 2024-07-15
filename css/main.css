@@ -279,6 +279,7 @@ header {
     justify-content: center;
     background-color: transparent;
     border: none;
+    color: #0066cc;
 
 }
 
@@ -297,8 +298,7 @@ header {
     background-image: url('/images/Design.png');
     background-size: cover;
     background-position: center;
-    color: #0066cc;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
     display: flex;
@@ -319,8 +319,7 @@ header {
     background-image: url('/images/mapbg.jpg');
     background-size: cover;
     background-position: center; /* Center the background image */
-    color: #0066cc;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     font-weight: bold;
     text-align: center;
     line-height: 5dvh; /* Align text vertically */
