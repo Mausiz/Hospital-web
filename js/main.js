@@ -17,7 +17,7 @@ document.querySelectorAll('.service-card').forEach(card => {
 /***************search bar Start ***************/
 function searchFunction() {
     let input = document.getElementById('search-bar').value.toLowerCase();
-    let sections = document.querySelectorAll('.body');
+    let sections = document.querySelectorAll('#services');
     let found = false;
 
     sections.forEach(section => {

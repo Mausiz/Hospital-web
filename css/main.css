@@ -190,6 +190,7 @@ header {
     color: white;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .slide:nth-child(1) {
