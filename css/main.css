@@ -225,7 +225,7 @@ header {
     z-index: 2;
     color: white;
     background: rgba(0, 0, 0, 0.425); /* Semi-transparent background */
-    padding: 1.1rem 1.3rem;
+    padding: 1.1rem 0.5rem 1rem 1.5rem;
     border-radius: 5px;
     width: 21rem; /* Optional: to control the width of the text box */
 }
