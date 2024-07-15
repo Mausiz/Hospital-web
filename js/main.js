@@ -209,6 +209,44 @@ scrollToTopBtn.addEventListener("click", function() {
 
 /*********** scroll to top btn - End ************/
 
+/*********** Reviews - Start **************/
+
+function initMap() {
+    const map = new google.maps.Map(document.createElement('div'));
+    const service = new google.maps.places.PlacesService(map);
+
+    const request = {
+        placeId: 'YOUR_PLACE_ID', // Replace with your Google Place ID
+        fields: ['reviews']
+    };
+
+    service.getDetails(request, (place, status) => {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+            displayReviews(place.reviews);
+        }
+    });
+}
+
+function displayReviews(reviews) {
+    const reviewsGrid = document.getElementById('reviews-grid');
+    reviews.forEach(review => {
+        const reviewCard = document.createElement('div');
+        reviewCard.className = 'review-card';
+        reviewCard.innerHTML = `
+            <div class="review-header">
+                <img src="${review.profile_photo_url}" alt="Reviewer Avatar" class="reviewer-avatar">
+                <div>
+                    <div class="reviewer-name">${review.author_name}</div>
+                    <div class="review-rating">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
+                </div>
+            </div>
+            <p class="review-content">"${review.text}"</p>
+        `;
+        reviewsGrid.appendChild(reviewCard);
+    });
+}
+/*********** Reviews - End ***************/
+
 /********* Form Submission(AJAX) - Start ******/
 document.getElementById('appointmentForm').addEventListener('submit', function(e) {
     e.preventDefault();

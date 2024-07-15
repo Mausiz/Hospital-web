@@ -10,6 +10,7 @@
     --primary-color: #0077be;
     --secondary-color: #ffffff;
     --text-color: #333333;
+    --accent-color: #28a745;
     --button-hover-color: #005c91;
 }
 
@@ -738,6 +739,95 @@ header {
 }
 
 /******* Scroll to Top Button - End ********/
+
+/********* Reviews - Start *********/
+
+.reviews-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.review-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+}
+
+.review-rating {
+    color: #ffc107;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.review-content {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.add-review-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-review-btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/********* Reviews - End *********/
 
 /************** Footer - Start ****************/
 .hospital-footer {
