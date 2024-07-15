@@ -26,7 +26,7 @@ body {
 header {
     background-color: #ffffff;
     padding: 0 1px;
-    height: 11.5rem;
+    height: 8.4rem;
 }
 
 .navbar-upper {
@@ -35,17 +35,22 @@ header {
     align-items: center;
     background-color : var(--primary-color);
     color: #fffefe;
-    padding: 0 15px 0 10px;
+    padding: 0 0.5rem 0 1px;
 }
 
 .logo {
-    height: 8rem;
+    height: 5rem;
     position: relative;
-    padding: 10px 0 10px 5px;
+    padding: 0.2rem 0 0.2rem 0;
+    margin: 0 4rem 0 0;
 }
 
-.location {
-    font-size: 1.5rem;
+.emergency-contacts {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: end;
+    align-content: baseline;
 }
 
 .navbar-lower {
@@ -110,7 +115,7 @@ header {
     .menu-items {
         display: none;
         position: absolute; /* Position it right below the hamburger icon */
-        top: 11.5rem;
+        top: 8.4rem;
         left: 0;
         right: 0;
         background-color: #fff;
@@ -213,12 +218,12 @@ header {
 
 .text-overlay {
     position: relative;
-    margin-left: 10px;
+    margin-left: 2rem;
     bottom: -11%;
     left: -15%;
     z-index: 2;
     color: white;
-    background: rgba(0, 0, 0, 0.050); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.425); /* Semi-transparent background */
     padding: 1.1rem 1.3rem;
     border-radius: 5px;
     width: 21rem; /* Optional: to control the width of the text box */
@@ -284,14 +289,16 @@ header {
 .appointment-btn {
     width: max-content;
     max-width: 25dvw;
+    min-width: 20dvw;
     height: 3.5rem;
     border: none;
     border-radius: 10px 0 10px 0;
-    background-image: url('/images/white-theatre.jpg');
+    background-image: url('/images/Design.png');
     background-size: cover;
     background-position: center;
-    color: rgb(66, 21, 66);
-    font-size: 1.3rem;
+    color: #0066cc;
+    font-size: 1.1rem;
+    font-weight: bold;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -311,8 +318,9 @@ header {
     background-image: url('/images/mapbg.jpg');
     background-size: cover;
     background-position: center; /* Center the background image */
-    color: rgb(66, 21, 66);
+    color: #0066cc;
     font-size: 1.3rem;
+    font-weight: bold;
     text-align: center;
     line-height: 5dvh; /* Align text vertically */
     cursor: pointer;
@@ -623,6 +631,7 @@ header {
 .service-details {
     max-height: 0;
     overflow: hidden;
+    padding-left: 2rem;
     transition: max-height 0.3s ease;
 }
 
@@ -816,7 +825,7 @@ header {
 }
 
 .social-media a {
-    color: #ecf0f1;
+    color: #000000;
     margin: 0 0.5rem;
     font-size: 1.2rem;
     transition: color 0.3s ease;
